@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>807</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="bt_dowload">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>480</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <italic>false</italic>
+     </font>
+    </property>
+    <property name="text">
+     <string>Download</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rb_mp3">
+    <property name="geometry">
+     <rect>
+      <x>328</x>
+      <y>380</y>
+      <width>56</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mp3</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="rb_mp4">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>380</y>
+      <width>56</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mp4</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>10</y>
+      <width>601</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>link:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="txt_link"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>40</y>
+      <width>471</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/logo/logo.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <zorder>label_2</zorder>
+   <zorder>bt_dowload</zorder>
+   <zorder>rb_mp3</zorder>
+   <zorder>rb_mp4</zorder>
+   <zorder>layoutWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>807</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../assets/imagem.qrc"/>
+ </resources>
+ <connections/>
+</ui>

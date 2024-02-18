@@ -1,0 +1,36 @@
+version: "3"
+
+vars:
+  GREETING: ""
+
+tasks:
+
+  remove_python_files:
+    cmds:
+    - "rm -rf *.py"
+    silent: true
+
+  create_qt_aplication:
+    cmds:
+    - "chmod +x convert.sh && ./convert.sh"
+    silent: true
+
+  create_qt_images:
+    cmds:
+    - "pyrcc5 assets/imagem.qrc -o logo.py"
+    silent: true
+
+  create_exe_onfile:
+    cmds:
+    - "pyinstaller --onefile --noconsole main.py"
+    silent: true
+  
+  create_exe:
+    cmds:
+    - "pyinstaller --noconsole main.py"
+    silent: true
+  
+  merge_files:
+    cmds:
+    - "chmod +x merge.sh && ./merge.sh"
+    silent: true
