@@ -60,7 +60,7 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
         
         ### fazer action do botão --> função Download ###
-        self.bt_download.clicked.connect(self.download)
+        self.btn_download.clicked.connect(self.download)
 
     ### Função download ###
     def download(self):
